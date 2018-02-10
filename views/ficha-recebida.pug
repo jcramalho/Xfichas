@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    div(class="w3-container")
+        div(class="w3-container w3-blue")   
+            h1 Ficha recebida com sucesso
+        section(class="w3-container")
+            table(class="w3-table")
+                tr
+                    th Ficha
+                    td= info.ficha
+                tr
+                    th Descrição
+                    td= info.desc
+                tr
+                    th UC associada
+                    td= info.uc    
+                tr
+                    th Ficha HTML
+                    td
+                        a(href="/fichas-html/" + info.fres)= info.fres         
+        footer(class="w3-container w3-blue")
+          h5 Front-End da aplicação XFichas por JCR em 2013-02-26 (up. 2018-02-07).

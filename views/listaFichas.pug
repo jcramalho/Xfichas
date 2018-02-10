@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    div(class="w3-container")
+      header(class='w3-container w3-teal w3-center')
+        h1 Lista de Fichas no Repositório
+    div(class='w3-container')
+      table(class='w3-table-all')
+        tr
+          th Tema
+          th Identificador
+          th Lista de exercícios
+        each f in lista
+          tr
+            td= f.tema
+            td= f.id
+            td
+                ul(class="w3-ul")
+                    each e in f.exercicios
+                        li= e
+      footer(class='w3-container w3-teal')
+        address 
+          a(href="/")
+            i(class="material-icons") home
+          .
+            Gerado por Xfichas by jcr
+
+    

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AulaPrática xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/Applications/MAMP/htdocs/myapps/xfichas2/aulaP.xsd" id="prc2015-f5">
+    <meta>
+        <disciplina>Processamento e Representação de Conhecimento - PRC (MEI - 1ºano)</disciplina>
+        <datas>
+            <data>2015-05-18</data>
+        </datas>
+        <objectivos>
+            <para>Este ficha prática contem exercícios para serem resolvidos nas aulas teórico-práticas com vista a sedimentar os conhecimentos relativos a:
+                <lista>
+                    <item>Especificação de ontologias.</item>
+                    <item>Utilização do SPARQL para fazer queries a informação especificada em RDF.</item>
+                </lista>
+            </para>
+        </objectivos>
+        <recursos>
+            <documento url="geospecies.owl">Extrato de uma ontologia sobre espécies biológicas</documento>
+        </recursos>
+        <changelog>
+            <update>
+                <date>2015-05-25</date>
+                <description>Foi criada a ficha.</description>
+            </update>
+        </changelog>
+    </meta>
+    <corpo>
+        <exercício>
+            <título>Uma ontologia para uma história</título>
+            <enunciado>
+                <para>Cinco amigas frequentam a mesma escola na mesma classe.</para>
+                <para>Descubra qual a disciplina preferida, o animal de estimação, o sumo de fruta de que mais gostam, a cor da mochila e a cidade europeia que as 5 amigas pretendem visitar nas próximas férias.</para>
+                <para>Considere os seguintes fatos e baseando-se neles construa uma ontologia em Protégé que permita saber tudo sobre cada uma das cinco meninas:</para>
+                <alíneas>
+                    <alínea>Joana gosta de sumo de Abacaxi.</alínea>
+                    <alínea>A menina que tem Hamsters gosta de estudar Artes.</alínea>
+                    <alínea>O sumo favorito de Ana é de Limão.</alínea>
+                    <alínea>Jéssica senta-se à esquerda da Renata.</alínea>
+                    <alínea>Pati é a primeira da esquerda.</alínea>
+                    <alínea>A menina da direita gosta de estudar Artes.</alínea>
+                    <alínea>Quem bebe sumo de Laranja gosta de Cavalos.</alínea>
+                    <alínea>A pessoa que gosta de sumo de Limão está no meio.</alínea>
+                    <alínea>A mochila da Jéssica é Verde.</alínea>
+                    <alínea>A menina à esquerda da do meio viajará Paris.</alínea>
+                    <alínea>Quem quer viajar para Londres tem a mochila Amarela.</alínea>
+                    <alínea>A menina que gosta do sumo de Abacaxi senta-se ao lado da que viajará para Bruxelas.</alínea>
+                    <alínea>Quem tem a mochila Vermelha vai viajar para Bruxelas.</alínea>
+                    <alínea>A primeira da esquerda usa uma mochila Amarela.</alínea>
+                    <alínea>A menina da mochila Azul tem Cães.</alínea>
+                    <alínea>Quem gosta de Biologia senta ao lado da menina que tem Hamsters.</alínea>
+                    <alínea>A garota que senta à direita de quem gosta de História prefere Matemática.</alínea>
+                    <alínea>Quem gosta de sumo de Laranja senta-se ao lado de quem gosta de sumo de Maracujá.</alínea>
+                    <alínea>Viajará para o Estocolmo a menina que tem a mochila Preta.</alínea>
+                    <alínea>A garota que gosta de sumo de Morango tem Canários como animal de estimação.</alínea>
+                    <alínea>A menina que gosta de Biologia senta ao lado da que gosta de Português.</alínea>
+                    <alínea>Jéssica viajará para Roma nas férias.</alínea>
+                    <alínea>Uma menina gosta de Gatos.</alínea>
+                </alíneas>
+                <para>No fim, grava a tua ontologia em RDF/XML.</para>
+            </enunciado>
+        </exercício>
+        <exercício>
+            <título>SPARQL sobre a história</título>
+            <enunciado>
+                <para>Constrói queries em SPARQL que permitam obter as seguintes informações:</para>
+                <alíneas>
+                    <alínea>Os nomes de todas as meninas;</alínea>
+                    <alínea>Uma tabela com o destino turístico de cada uma: nome e cidade detino;</alínea>
+                    <alínea>Uma tabela com informação de gostos pessoais: nome, sumo, animal;</alínea>
+                    <alínea>Uma tabela com a informação escolar: nome, quem se senta à esquerda e à direita e qual a disciplina favorita.</alínea>
+                </alíneas>
+                <para>Coloque as queries em ficheiros de individuais com nome <kw>sparql-x.txt</kw> em que <kw>x</kw> é o identificador da alínea.</para>
+            </enunciado>
+        </exercício>
+        <exercício>
+            <título>FOAF: Friend of a Friend</título>
+            <enunciado>
+                <para>FOAF é um dialeto RDF que começou como uma brincadeira mas que se tem vindo a tornar séria depois das redes sociais terem adotado este como um dos formatos para representação de relações entre pessoas.</para>
+                <para>Neste exercício, só terás de criar o teu FOAF.</para>
+                <para>Podes fazê-lo à mão ou usando o <xref url="http://www.ldodds.com/foaf/foaf-a-matic.html">formulário disponível na Web</xref>.</para>
+                <para>O teu foaf deverá ter pelo menos 20 factos sobre a tua pessoa e no mínimo uma lista com 5 amigos.</para>
+                <para>Sugestão: não te limites ao formulário. Usa-o para criar o primeiro esqueleto mas depois consulta a <xref url="http://www.foaf-project.org/">norma disponível na Web</xref> e completa à mão com o que achares necessário e conveniente.</para>
+            </enunciado>
+        </exercício>
+        <exercício>
+            <título>SPARQL exploratório</título>
+            <enunciado>
+                <para>Considera a ontologia disponível nos recursos da ficha.</para>
+                <para>Responde às seguintes questões com queries em SPARQL:</para>
+                <alíneas>
+                    <alínea>Que conceitos estão presentes na ontologia?</alínea>
+                    <alínea>Que propriedades estão disponíveis?</alínea>
+                    <alínea>Que espécies de plantas estão referenciadas neste extrato?</alínea>
+                </alíneas>
+            </enunciado>
+        </exercício>
+    </corpo>
+</AulaPrática>

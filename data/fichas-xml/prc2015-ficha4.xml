@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AulaPrática xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/Applications/MAMP/htdocs/myapps/xfichas2/aulaP.xsd" id="prc2015-f4">
+    <meta>
+        <disciplina>Processamento e Representação de Conhecimento - PRC (MEI - 1ºano)</disciplina>
+        <datas>
+            <data>2015-05-18</data>
+        </datas>
+        <objectivos>
+            <para>Este ficha prática contem exercícios para serem resolvidos nas aulas teórico-práticas com vista a sedimentar os conhecimentos relativos a:
+                <lista>
+                    <item>Especificação de ontologias.</item>
+                    <item>Utilização do SPARQL para fazer queries a informação especificada em RDF.</item>
+                </lista>
+            </para>
+        </objectivos>
+        <changelog>
+            <update>
+                <date>2015-05-18</date>
+                <description>Foi criada a ficha.</description>
+            </update>
+        </changelog>
+    </meta>
+    <corpo>
+        <exercício>
+            <título>Classes e relações 'is-a'</título>
+            <enunciado>
+                <para>Uma das tarefas fundamentais na especificação de uma ontologia é a identificação de classes e das relações <kw>is-a</kw> (parte/constituinte/componente). Por isso tenta desenvolver os seguintes problemas que propõem a seguir: </para>
+                <para>Cada alínea apresenta 3 classes. Cada classe (à esquerda) relaciona-se com as outras duas por uma das seguintes relações: <kw>temSubclasse</kw>, <kw>temComponente</kw>, ou <kw>constituídoPor</kw>.</para>
+                <alíneas>
+                    <alínea>Carro ??? Pástico, Metal;</alínea>
+                    <alínea>Carro ??? PortaBagagens, Habitáculo;</alínea>
+                    <alínea>Carro ??? Comercial, Monovolume;</alínea>
+                    <alínea>Dente ??? Coroa, Raiz;</alínea>
+                    <alínea>Dente ??? Esmalte, Polpa;</alínea>
+                    <alínea>Ave ??? Galinha, Pomba;</alínea>
+                    <alínea>Galinha ??? Asa, Perna;</alínea>
+                    <alínea>Ovo ??? Casca, Gema;</alínea>
+                    <alínea>Transmissão ??? Manual, Automática;</alínea>
+                    <alínea>Bolacha ??? BolachaChoc, BolachaGengibre;</alínea>
+                    <alínea>Livro ??? Autobiografia, Romance;</alínea>
+                    <alínea>Luva ??? LuvaEsquerda, LuvaDireita;</alínea>
+                </alíneas>
+            </enunciado>
+        </exercício>
+        <exercício>
+            <título>Relações Hierárquicas</título>
+            <enunciado>
+                <para>Cada um dos exemplos seguintes contem 3 termos que representam classes. Identifica as relações <kw>temMembro</kw> e <kw>temSubclasse</kw> entre os 3 termos.</para>
+                <alíneas>
+                    <alínea>Dedo, Indicador, Dedos;</alínea>
+                    <alínea>EquipaBasket, Poste, JogadorBasket;</alínea>
+                    <alínea>MarcadorAzul, Marcador, Marcadores;</alínea>
+                    <alínea>Gardo, Faqueiro, Talher;</alínea>
+                    <alínea>Apresente um conjunto seu, com 3 termos que se relacionam da mesma forma.</alínea>
+                </alíneas>
+            </enunciado>
+        </exercício>
+        <exercício>
+            <título>Uma ontologia para Queques ("Cupcakes")</título>
+            <enunciado>
+                <para>Cria uma ontologia para o domínio dos queques no Protégé. Os utilizadores da ontologia devem ser capazes de descrever os componentes de um queque: bolo, glacé e a forma em papel, assim como os ingredientes que entram na composição do bolo e do glacé.</para>
+                <imagem>
+                    <legenda>Dados do problema</legenda>
+                    <grafico path="imagens/esquema-geral.png"/>
+                </imagem>
+                <para>Segue os seguintes passos:</para>
+                <alíneas>
+                    <alínea>Cria a hierarquia de classes. Deverá incluir classes para os componentes assim como para os ingredientes;</alínea>
+                    <alínea>Acrescenta relações à tua ontologia entre os componentes e os ingredientes;</alínea>
+                    <alínea>Depois de terminares a estrutura base da tua ontologia pensa como podes expandi-la. Fará sentido destacar componentes comestíveis dos não comestíveis? Como é que uma classe <kw>massa crua</kw> poderia ser contemplada e qual a sua relação com a classe <kw>bolo</kw>? Será que a ontologia poderia contemplar classes para velas e outros adereços?</alínea>
+                </alíneas>
+            </enunciado>
+        </exercício>
+        <exercício>
+            <título>Questões teóricas</título>
+            <enunciado>
+                <para>Responda às seguintes questões usando os meios que entender:</para>
+                <alíneas>
+                    <alínea>Qual a diferença entre uma ontologia e uma conceptualização?</alínea>
+                    <alínea>Se vários websites usarem a mesma ontologia pode um termo ter significados diferentes em diferentes websites?</alínea>
+                    <alínea>Uma base de conhecimento pode usar mais de uma ontologia? Caso a sua resposta seja negativa explique porquê. Caso seja positiva explique de que modo é poderiam ser usadas.</alínea>
+                    <alínea>Qual a relação entre classes e indivíduos?</alínea>
+                </alíneas>
+            </enunciado>
+        </exercício>
+        <exercício>
+            <título>Ontologia RDF: Portugal - Espanha - França</título>
+            <enunciado>
+                <para>Cria uma ontologia em RDF de acordo com o seguinte diagrama:</para>
+                <imagem>
+                    <legenda>Esquema da ontologia</legenda>
+                    <grafico path="imagens/ontologia-pais.png"/>
+                </imagem>
+                <para>Acrescenta-lhe os indivíduos: Portugal, Espanha e França. Carateriza-os usando as propriedades da ontologia que definiste.</para>
+            </enunciado>
+        </exercício>
+        <exercício>
+            <título>Mais umas questões teórico-práticas</título>
+            <enunciado>
+                <alíneas>
+                    <alínea>Considera as classes <kw>Homem</kw> e <kw>Mulher</kw>. Indica uma relação entre as duas classes que possa ser incluída numa ontologia.</alínea>
+                    <alínea> Considera as classes <kw>Pessoa</kw>, <kw>Homem</kw> e <kw>Mulher</kw>. Indica uma relação entre as três que possa ser incluída numa ontologia. Que parte deste relacionamento pode ser expresso em RDFS?</alínea>
+                    <alínea>Suponha que declaramos <kw>Pedro</kw> e <kw>Paulo</kw> como  <kw>pai</kw> de Maria. É óbvio que estamos perante um erro semântico. Como é que o modelo semântico poderia validar esta situação sinalizando o erro?</alínea>
+                    <alínea>Qual a relação existente entre as relações <kw>filhoDe</kw> e <kw>paiDe</kw>?</alínea>
+                    <alínea> Considera a proppriedade <kw>come</kw> com domínio <kw>animal</kw>  e contradomínio <kw>animal</kw>  ou <kw>planta</kw>. Suponha que é definida uma nova classe designada <kw>Vegetariano</kw>. Indica uma restrição necessária para esta classe associada à propriedade <kw>come</kw>.</alínea>
+                </alíneas>
+            </enunciado>
+        </exercício>
+    </corpo>
+</AulaPrática>

@@ -1,0 +1,232 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<title>Gui&atilde;o de aula p&aacute;tica</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="w3-container">
+<header class="w3-container w3-center w3-blue">
+<h1>Ficha id: 
+              prc2015-f5</h1>
+<h3>Processamento e Representa&ccedil;&atilde;o de Conhecimento - PRC (MEI - 1&ordm;ano)</h3>
+</header>
+<p class="w3-left-align">
+            
+<p>Este ficha pr&aacute;tica contem exerc&iacute;cios para serem resolvidos nas aulas te&oacute;rico-pr&aacute;ticas com vista a sedimentar os conhecimentos relativos a:
+                <ul class="w3-ul">
+                    
+<li>&bull;
+      Especifica&ccedil;&atilde;o de ontologias.</li>
+                    
+<li>&bull;
+      Utiliza&ccedil;&atilde;o do SPARQL para fazer queries a informa&ccedil;&atilde;o especificada em RDF.</li>
+                
+</ul>
+            
+</p>
+        
+</p>
+<div class="w3-row-padding">
+<div class="w3-col s6">
+<div class="w3-card-4">
+<header class="w3-container w3-blue">
+<h3>Exerc&iacute;cios</h3>
+</header>
+<div class="w3-container">
+<ul class="w3-ul">
+<a name="ind-ex"></a>
+<li>
+<a href="#e1">Uma ontologia para uma hist&oacute;ria</a>
+</li>
+<a name="ind-ex"></a>
+<li>
+<a href="#e2">SPARQL sobre a hist&oacute;ria</a>
+</li>
+<a name="ind-ex"></a>
+<li>
+<a href="#e3">FOAF: Friend of a Friend</a>
+</li>
+<a name="ind-ex"></a>
+<li>
+<a href="#e4">SPARQL explorat&oacute;rio</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="w3-col s6">
+<div class="w3-card-4">
+<header class="w3-container w3-blue">
+<h3>Recursos</h3>
+</header>
+<div class="w3-container">
+<ul class="w3-ul">
+<a name="ind-ex"></a>
+<li>&bull;
+                  <a href="geospecies.owl">Extrato de uma ontologia sobre esp&eacute;cies biol&oacute;gicas</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="w3-card-4 w3-padding">
+<a name="e1"></a>
+<header class="w3-container w3-blue">
+<h5>Exerc&iacute;cio N&ordm; 1:
+          Uma ontologia para uma hist&oacute;ria</h5>
+</header>
+<div class="w3-container">
+                
+<p>Cinco amigas frequentam a mesma escola na mesma classe.</p>
+                
+<p>Descubra qual a disciplina preferida, o animal de estima&ccedil;&atilde;o, o sumo de fruta de que mais gostam, a cor da mochila e a cidade europeia que as 5 amigas pretendem visitar nas pr&oacute;ximas f&eacute;rias.</p>
+                
+<p>Considere os seguintes fatos e baseando-se neles construa uma ontologia em Prot&eacute;g&eacute; que permita saber tudo sobre cada uma das cinco meninas:</p>
+                
+<ol class="a">
+                    
+<li>Joana gosta de sumo de Abacaxi.</li>
+                    
+<li>A menina que tem Hamsters gosta de estudar Artes.</li>
+                    
+<li>O sumo favorito de Ana &eacute; de Lim&atilde;o.</li>
+                    
+<li>J&eacute;ssica senta-se &agrave; esquerda da Renata.</li>
+                    
+<li>Pati &eacute; a primeira da esquerda.</li>
+                    
+<li>A menina da direita gosta de estudar Artes.</li>
+                    
+<li>Quem bebe sumo de Laranja gosta de Cavalos.</li>
+                    
+<li>A pessoa que gosta de sumo de Lim&atilde;o est&aacute; no meio.</li>
+                    
+<li>A mochila da J&eacute;ssica &eacute; Verde.</li>
+                    
+<li>A menina &agrave; esquerda da do meio viajar&aacute; Paris.</li>
+                    
+<li>Quem quer viajar para Londres tem a mochila Amarela.</li>
+                    
+<li>A menina que gosta do sumo de Abacaxi senta-se ao lado da que viajar&aacute; para Bruxelas.</li>
+                    
+<li>Quem tem a mochila Vermelha vai viajar para Bruxelas.</li>
+                    
+<li>A primeira da esquerda usa uma mochila Amarela.</li>
+                    
+<li>A menina da mochila Azul tem C&atilde;es.</li>
+                    
+<li>Quem gosta de Biologia senta ao lado da menina que tem Hamsters.</li>
+                    
+<li>A garota que senta &agrave; direita de quem gosta de Hist&oacute;ria prefere Matem&aacute;tica.</li>
+                    
+<li>Quem gosta de sumo de Laranja senta-se ao lado de quem gosta de sumo de Maracuj&aacute;.</li>
+                    
+<li>Viajar&aacute; para o Estocolmo a menina que tem a mochila Preta.</li>
+                    
+<li>A garota que gosta de sumo de Morango tem Can&aacute;rios como animal de estima&ccedil;&atilde;o.</li>
+                    
+<li>A menina que gosta de Biologia senta ao lado da que gosta de Portugu&ecirc;s.</li>
+                    
+<li>J&eacute;ssica viajar&aacute; para Roma nas f&eacute;rias.</li>
+                    
+<li>Uma menina gosta de Gatos.</li>
+                
+</ol>
+                
+<p>No fim, grava a tua ontologia em RDF/XML.</p>
+            
+</div>
+<footer class="w3-container w3-blue">
+<a href="http://localhost:3000/fichas"><i class="material-icons">home</i></a><a href="#ind-ex"><i class="material-icons">list</i></a>
+</footer>
+</div>
+<div class="w3-card-4 w3-padding">
+<a name="e2"></a>
+<header class="w3-container w3-blue">
+<h5>Exerc&iacute;cio N&ordm; 2:
+          SPARQL sobre a hist&oacute;ria</h5>
+</header>
+<div class="w3-container">
+                
+<p>Constr&oacute;i queries em SPARQL que permitam obter as seguintes informa&ccedil;&otilde;es:</p>
+                
+<ol class="a">
+                    
+<li>Os nomes de todas as meninas;</li>
+                    
+<li>Uma tabela com o destino tur&iacute;stico de cada uma: nome e cidade detino;</li>
+                    
+<li>Uma tabela com informa&ccedil;&atilde;o de gostos pessoais: nome, sumo, animal;</li>
+                    
+<li>Uma tabela com a informa&ccedil;&atilde;o escolar: nome, quem se senta &agrave; esquerda e &agrave; direita e qual a disciplina favorita.</li>
+                
+</ol>
+                
+<p>Coloque as queries em ficheiros de individuais com nome <b>sparql-x.txt</b> em que <b>x</b> &eacute; o identificador da al&iacute;nea.</p>
+            
+</div>
+<footer class="w3-container w3-blue">
+<a href="http://localhost:3000/fichas"><i class="material-icons">home</i></a><a href="#ind-ex"><i class="material-icons">list</i></a>
+</footer>
+</div>
+<div class="w3-card-4 w3-padding">
+<a name="e3"></a>
+<header class="w3-container w3-blue">
+<h5>Exerc&iacute;cio N&ordm; 3:
+          FOAF: Friend of a Friend</h5>
+</header>
+<div class="w3-container">
+                
+<p>FOAF &eacute; um dialeto RDF que come&ccedil;ou como uma brincadeira mas que se tem vindo a tornar s&eacute;ria depois das redes sociais terem adotado este como um dos formatos para representa&ccedil;&atilde;o de rela&ccedil;&otilde;es entre pessoas.</p>
+                
+<p>Neste exerc&iacute;cio, s&oacute; ter&aacute;s de criar o teu FOAF.</p>
+                
+<p>Podes faz&ecirc;-lo &agrave; m&atilde;o ou usando o <a href="http://www.ldodds.com/foaf/foaf-a-matic.html">formul&aacute;rio dispon&iacute;vel na Web</a>.</p>
+                
+<p>O teu foaf dever&aacute; ter pelo menos 20 factos sobre a tua pessoa e no m&iacute;nimo uma lista com 5 amigos.</p>
+                
+<p>Sugest&atilde;o: n&atilde;o te limites ao formul&aacute;rio. Usa-o para criar o primeiro esqueleto mas depois consulta a <a href="http://www.foaf-project.org/">norma dispon&iacute;vel na Web</a> e completa &agrave; m&atilde;o com o que achares necess&aacute;rio e conveniente.</p>
+            
+</div>
+<footer class="w3-container w3-blue">
+<a href="http://localhost:3000/fichas"><i class="material-icons">home</i></a><a href="#ind-ex"><i class="material-icons">list</i></a>
+</footer>
+</div>
+<div class="w3-card-4 w3-padding">
+<a name="e4"></a>
+<header class="w3-container w3-blue">
+<h5>Exerc&iacute;cio N&ordm; 4:
+          SPARQL explorat&oacute;rio</h5>
+</header>
+<div class="w3-container">
+                
+<p>Considera a ontologia dispon&iacute;vel nos recursos da ficha.</p>
+                
+<p>Responde &agrave;s seguintes quest&otilde;es com queries em SPARQL:</p>
+                
+<ol class="a">
+                    
+<li>Que conceitos est&atilde;o presentes na ontologia?</li>
+                    
+<li>Que propriedades est&atilde;o dispon&iacute;veis?</li>
+                    
+<li>Que esp&eacute;cies de plantas est&atilde;o referenciadas neste extrato?</li>
+                
+</ol>
+            
+</div>
+<footer class="w3-container w3-blue">
+<a href="http://localhost:3000/fichas"><i class="material-icons">home</i></a><a href="#ind-ex"><i class="material-icons">list</i></a>
+</footer>
+</div>
+<footer class="w3-container w3-blue">
+<p>Generated by xfichas app by jcr::2018-02-07</p>
+</footer>
+</div>
+</body>
+</html>
