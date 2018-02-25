@@ -12,6 +12,7 @@
     "formidable": "^1.1.1",
     "nodemon": "^1.14.12",
     "pug": "^2.0.0-rc.4",
-    "xml-parser": "^1.2.1"
+    "xml-parser": "^1.2.1",
+    "xslt4node": "^0.3.2"
   }
 }
